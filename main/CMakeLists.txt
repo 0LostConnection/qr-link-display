@@ -1,0 +1,27 @@
+idf_component_register(
+    SRCS
+        "main.cpp"
+        "board/display.cpp"
+        "board/touch.cpp"
+        "board/lcd_init_cmds.c"
+        "board/panel_hw.c"
+        "wifi/provision.cpp"
+        "qr/store.cpp"
+        "ui/status_ui.cpp"
+        "ui/qr_ui.cpp"
+        "ui/fonts.cpp"
+    INCLUDE_DIRS
+        "."
+        "board"
+        "ui"
+        "wifi"
+        "qr"
+    REQUIRES
+        nvs_flash
+        esp_wifi
+        esp_netif
+        esp_event
+        esp_http_server
+        esp_timer
+        esp_app_format
+)

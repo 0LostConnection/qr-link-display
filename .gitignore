@@ -1,0 +1,19 @@
+# Build / IDF
+/.pio
+/build
+/managed_components
+/sdkconfig
+/sdkconfig.JC3248W535EN
+/sdkconfig.old
+*.zip
+
+# Upstream reference clone (separate git repo)
+/Spotify-ESP32/
+
+# Generated knowledge graph
+/graphify-out/
+
+# Editor
+.vscode/c_cpp_properties.json
+.vscode/launch.json
+.vscode/settings.json
